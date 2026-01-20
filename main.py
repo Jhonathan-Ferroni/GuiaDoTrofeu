@@ -7,6 +7,7 @@ class TelaInicial(tk.Frame):
         super().__init__(master)
 
         tk.Label(self, text="Seja bem-vindo ao Guia do Troféu!").pack(pady=20)
+        tk.Label(self, text="Deveria haver uma tela de login aqui!").pack(pady=20)
 
         tk.Button(
             self,
