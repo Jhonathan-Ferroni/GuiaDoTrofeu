@@ -10,7 +10,10 @@ Aqui estão algumas prévias da interface do projeto:
 
 | Menu de Login | Menu de Seleção |
 |:---:|:---:|
-| <img src="./imagens/1.png" alt="Tela Principal com lista de jogos" width="400"> | <img src="./imagens/2.png" alt="Detalhes da conquista e dicas" width="400"> |
+| <img src="./imagens/1.png" alt="Tela Principal" width="400"> | <img src="./imagens/2.png" alt="Detalhes da conquista e dicas" width="400"> |
+| Menu de Jogos |
+|:---:|:---:|
+| <img src="./imagens/3.png" alt="Lista de jogos" width="400"> |
 
 ---
 

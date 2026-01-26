@@ -1,5 +1,6 @@
 import tkinter as tk
 from rotas.menu import Menu
+from rotas.jogos import Jogos
 
 
 class TelaInicial(tk.Frame):
@@ -38,6 +39,9 @@ class App(tk.Tk):
 
     def mostrar_menu(self):
         self.trocar_tela(Menu(self))
+
+    def mostrar_jogos(self):
+        self.trocar_tela(Jogos(self))
 
 
 if __name__ == "__main__":

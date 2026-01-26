@@ -7,12 +7,9 @@ class Menu(tk.Frame):
 
         tk.Label(self, text="Menu").pack(pady=20)
 
-        tk.Button(self, text="Jogos", command=self.acao_jogos).pack(pady=10)
+        tk.Button(self, text="Jogos", command=master.mostrar_jogos).pack(pady=10)
         tk.Button(self, text="Configurações", command=self.acao_config).pack(pady=10)
         tk.Button(self, text="Sair", command=master.destroy).pack(pady=10)
-
-    def acao_jogos(self):
-        print("Clicou em Jogos")
-
+        
     def acao_config(self):
         print("Clicou em Configurações")
