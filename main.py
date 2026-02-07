@@ -1,6 +1,8 @@
 import tkinter as tk
+import os
 from rotas.menu import Menu
 from rotas.jogos import Jogos
+from database.steam import buscar_e_salvar_jogos
 
 
 class TelaInicial(tk.Frame):
@@ -51,6 +53,8 @@ class App(tk.Tk):
     def login(self, steam_id):
         self.steam_id = steam_id
         print(f"SteamID logado: {steam_id}")
+        saved = buscar_e_salvar_jogos(steam_id)
+        print(f"Jogos buscados/salvos: {saved}")
         self.mostrar_menu()
 
     def mostrar_tela_inicial(self):

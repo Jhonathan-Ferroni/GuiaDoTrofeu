@@ -1,14 +1,21 @@
 import tkinter as tk
 from tkinter import ttk
 import sqlite3
+import os
 
 
 def buscar_jogos():
-    conn = sqlite3.connect("database/app.db")
+    # usa caminho absoluto para o DB (pasta database ao lado de rotas)
+    db_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "database", "app.db"))
+    conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
-    cursor.execute("SELECT id_jogo, nome FROM jogo")
-    dados = cursor.fetchall()
-    conn.close()
+    try:
+        cursor.execute("SELECT id_jogo, nome FROM jogo")
+        dados = cursor.fetchall()
+    except Exception:
+        dados = []
+    finally:
+        conn.close()
     return dados
 
 
